@@ -1,0 +1,37 @@
+<input class="inputtodo" placeholder="What do you want to do?" type="text">
+<button id="savebutton" onclick="PushButton()">Save to To-Do list</button>
+<div class="outputwindow">ListofTasks
+    <div class="task"></div>
+</div>
+
+<script>
+    function PushButton () {
+    const myInput = document.querySelector('.inputtodo').value;
+    const myDiv = document.querySelector('.outputwindow');
+    myDiv.innerText = myInput;
+    
+    }
+
+    document.querySelector('.savebutton').addEventListener('click', PushButton).value;
+
+    document.getElementsByTagName('body').appendChild(myDiv);
+    var div2 = document.createElement('div');
+    div2.className = 'block-2';
+    myDiv.appendChild(div2);
+
+//     function myFunction() {
+//   var node = document.createElement("LI");
+//   var textnode = document.createTextNode("Water");
+//   node.appendChild(textnode);
+//   document.getElementById("myList").appendChild(node);
+    
+    // var newDiv = document.getElementsByClassName('outputwindow')
+    // var freshDiv = document.createElement("div");
+    // freshDiv.className = 'newnote'
+    // freshDiv.innerText = "new div";
+    // newDiv.appendChild(freshDiv);
+
+   
+   
+    
+</script>
